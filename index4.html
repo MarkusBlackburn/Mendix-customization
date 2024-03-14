@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	* {font-family: sans-serif;}
+	table {border-collapse: collapse;}
+	pre {margin: 0px}
+	.border {border-bottom: 1px solid #CCCCCC;}
+	.logo1 {color: #002747; font-size: 24px;}
+	.logo2 {color: #575757; font-size: 9px;}
+	.row-1 {padding: 10px 30px 8px 30px;}
+	.badge1 {
+		text-align: center;
+		display: block;
+		width: 90px;
+		color: white;
+		border-radius: 10px;
+		font-size: 12px;
+		background-color: #005b8f;
+		padding: 4px;
+	}
+	.badge2 {
+		color: white;
+		border-radius: 10px;
+		font-size: 14px;
+		background-color: #003865;
+		padding: 2px 2px 2px 10px;
+	}
+	.content {
+		width: 100%;
+		border: 1px solid #CCCCCC;
+	}
+	.column1 {
+		font-weight: bold; 
+		width: 40%;
+		padding: 5px;
+	}
+	.url {
+		display: inline-block;
+		text-decoration: none;
+		font-size: 18px;
+    		font-family: Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		text-align: center;
+		color: white;
+		width: 170px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 5px;
+	}
+	.url-apr {
+		background-color: #008651;
+	}
+	.url-rej {
+		background-color: #cb333b;
+	}
+</style>
+</head>
+<body>
+<table>
+<tbody>
+<tr>
+	<td class="border">
+		<span class="logo1">JABIL</span><br aria-hidden="true">
+		<span class="logo2">FIXED ASSET CONTROL SYSTEM</span>
+		
+	</td>
+	<td class="border" align="right">
+		<span class="badge1" data-ogsb="rgb(25, 196, 255)">NOTIFICATION</span>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" class="row-1">
+		<p class="badge2">Transfer admin task</p>
+		<p style="font-size: x-large;">Dear Admin,</p>
+		<p style="font-size: x-large;">You have  requests, that need to be processed</p>
+		<table class="content">
+		<tbody>
+			<tr><td class="column1">Request number:</td><td style="padding: 5px;">{%req_id%}</td></tr>
+			<tr><td class="column1">Cost Center:</td><td style="padding: 5px;"> {%cc%}</td></tr>
+            <tr><td class="column1">Date of confirmation:</td><td style="padding: 5px;">{%date%}</td></tr>
+			<tr><td colspan="2" style="font-weight: bold; padding: 5px;">Asset list:</td></tr>
+			<tr><td colspan="2" style="padding: 5px;">{%list%}</td></tr>
+		</tbody>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="padding: 5px 30px 0px 30px;">
+		<p>Thank you,<br>FACS Team</p>
+	</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
